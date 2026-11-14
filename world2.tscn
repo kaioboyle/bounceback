@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://babk3xjcdaepb"]
+
+[ext_resource type="Texture2D" uid="uid://3ilvdwsmbv2j" path="res://icon.svg" id="1_bkyvu"]
+[ext_resource type="PackedScene" uid="uid://yl6rjet3so5n" path="res://player.tscn" id="2_xljjp"]
+[ext_resource type="PackedScene" uid="uid://ewpdlivmg10" path="res://assets/long_rectangle.tscn" id="3_xljjp"]
+[ext_resource type="PackedScene" uid="uid://dittiro7pnbp7" path="res://world.tscn" id="4_xdth8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xdth8"]
+texture = ExtResource("1_bkyvu")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0ieis"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 3
+sources/1 = SubResource("TileSetAtlasSource_xdth8")
+
+[node name="world" type="Node2D" unique_id=1785734421]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1427477602]
+tile_set = SubResource("TileSet_0ieis")
+
+[node name="Player" parent="." unique_id=1099134673 instance=ExtResource("2_xljjp")]
+position = Vector2(303, 440)
+
+[node name="LongRectangle" parent="." unique_id=926134504 instance=ExtResource("3_xljjp")]
+position = Vector2(821, 567)
+
+[node name="World" parent="." unique_id=460259788 instance=ExtResource("4_xdth8")]
+position = Vector2(91, 75)
+
+[node name="World2" parent="." unique_id=166718971 instance=ExtResource("4_xdth8")]
+position = Vector2(907, 371)
+
+[node name="World3" parent="." unique_id=1015094530 instance=ExtResource("4_xdth8")]
+position = Vector2(473, 614)
+
+[node name="World4" parent="." unique_id=166974245 instance=ExtResource("4_xdth8")]
+position = Vector2(722, 401)
+
+[node name="World5" parent="." unique_id=793952780 instance=ExtResource("4_xdth8")]
+position = Vector2(635, 558)
+
+[node name="World6" parent="." unique_id=660483867 instance=ExtResource("4_xdth8")]
+position = Vector2(652, 105)
+
+[node name="World7" parent="." unique_id=2064392939 instance=ExtResource("4_xdth8")]
+position = Vector2(994, 248)
+
+[node name="World8" parent="." unique_id=1782195436 instance=ExtResource("4_xdth8")]
+position = Vector2(844, 230)
+
+[node name="World9" parent="." unique_id=2059466882 instance=ExtResource("4_xdth8")]
+position = Vector2(667, 272)
+
+[node name="World10" parent="." unique_id=1132690629 instance=ExtResource("4_xdth8")]
+position = Vector2(327, 80)
+
+[node name="World11" parent="." unique_id=922626326 instance=ExtResource("4_xdth8")]
+position = Vector2(193, 209)
+
+[node name="World12" parent="." unique_id=1352730402 instance=ExtResource("4_xdth8")]
+position = Vector2(503, 155)
+
+[node name="World13" parent="." unique_id=355703466 instance=ExtResource("4_xdth8")]
+position = Vector2(516, 406)
+
+[node name="World14" parent="." unique_id=1790166731 instance=ExtResource("4_xdth8")]
+position = Vector2(33, 220)
+
+[node name="World15" parent="." unique_id=625785656 instance=ExtResource("4_xdth8")]
+position = Vector2(368, 246)
+
+[node name="World16" parent="." unique_id=1823480856 instance=ExtResource("4_xdth8")]
+position = Vector2(860, 81)
