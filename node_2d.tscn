@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bsyqxkt6crh7f"]
+
+[ext_resource type="Texture2D" uid="uid://3ilvdwsmbv2j" path="res://icon.svg" id="1_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcfa8"]
+size = Vector2(129, 127)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(38, 20.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2r3s"]
+size = Vector2(216, 20)
+
+[node name="Node2D" type="Node2D" unique_id=1247070215]
+
+[node name="Player" type="Node2D" parent="." unique_id=728241276]
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="Player" unique_id=1707005287]
+position = Vector2(0, 63)
+node_a = NodePath("../RigidBody2D")
+node_b = NodePath("../RigidBody2D2")
+length = 101.0
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player" unique_id=1138241877]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/RigidBody2D" unique_id=1695936615]
+texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D" unique_id=1360770129]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_xcfa8")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Player" unique_id=1276386856]
+position = Vector2(0, 101)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D2" unique_id=1584626750]
+position = Vector2(0, 51.25)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="ColorRect" type="ColorRect" parent="Player/RigidBody2D2" unique_id=1528482193]
+offset_left = -20.0
+offset_top = 42.0
+offset_right = 20.0
+offset_bottom = 82.0
+scale = Vector2(1, 0.47999883)
+
+[node name="flor" type="Node2D" parent="." unique_id=2040966481]
+position = Vector2(0, 197)
+
+[node name="Area2D" type="Area2D" parent="flor" unique_id=1841173646]
+
+[node name="ColorRect" type="ColorRect" parent="flor/Area2D" unique_id=2044517553]
+offset_left = -108.0
+offset_top = -10.0
+offset_right = -68.0
+offset_bottom = 30.0
+scale = Vector2(5.3999987, 0.48000002)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="flor/Area2D" unique_id=195718764]
+position = Vector2(-7.6293945e-06, 0)
+scale = Vector2(0.99999994, 1)
+shape = SubResource("RectangleShape2D_f2r3s")
