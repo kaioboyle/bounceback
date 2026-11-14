@@ -30,6 +30,7 @@ metadata/_edit_use_anchors_ = true
 [node name="pogoPoint" type="Area2D" parent="CharacterBody2D" unique_id=1890813526]
 position = Vector2(0, 76)
 rotation = 1.5707964
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/pogoPoint" unique_id=1804531924]
 shape = SubResource("RectangleShape2D_f2r3s")
@@ -53,6 +54,7 @@ color = Color(0.41062272, 0.41062272, 0.41062272, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="Node2D" unique_id=1346104828]
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" unique_id=2135871259]
 scale = Vector2(8.359995, 2.1809158)
