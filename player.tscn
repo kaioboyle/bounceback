@@ -42,6 +42,37 @@ offset_right = 7.0
 offset_bottom = 8.0
 color = Color(0.8226427, 0.8226427, 0.8226427, 1)
 
+[node name="ColorRect2" type="ColorRect" parent="CharacterBody2D" unique_id=1416758729]
+offset_left = -14.0
+offset_top = -13.0
+offset_right = -8.0
+offset_bottom = -5.0
+color = Color(0.41674656, 0.4167466, 0.41674656, 1)
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D/ColorRect2" unique_id=220761368]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 2.0
+offset_right = 29.0
+offset_bottom = 10.0
+color = Color(0.41674656, 0.4167466, 0.41674656, 1)
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D/ColorRect2/ColorRect" unique_id=2106280330]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 22.0
+offset_right = -1.0
+offset_bottom = 25.0
+color = Color(0.41674656, 0.4167466, 0.41674656, 1)
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D/ColorRect2/ColorRect/ColorRect" unique_id=695139215]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 9.0
+offset_right = 13.0
+offset_bottom = 55.0
+color = Color(0.41674656, 0.4167466, 0.41674656, 1)
+
 [node name="Node2D" type="Node2D" parent="." unique_id=233123758]
 position = Vector2(0, 105)
 

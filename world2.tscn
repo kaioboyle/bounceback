@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://yl6rjet3so5n" path="res://player.tscn" id="2_xljjp"]
 [ext_resource type="PackedScene" uid="uid://ewpdlivmg10" path="res://assets/long_rectangle.tscn" id="3_xljjp"]
 [ext_resource type="PackedScene" uid="uid://dittiro7pnbp7" path="res://world.tscn" id="4_xdth8"]
+[ext_resource type="AudioStream" uid="uid://cxd2yqbe8aqm1" path="res://Project_1.wav" id="5_vef27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xdth8"]
 texture = ExtResource("1_bkyvu")
@@ -135,3 +136,7 @@ position = Vector2(368, 246)
 
 [node name="World16" parent="." unique_id=1823480856 instance=ExtResource("4_xdth8")]
 position = Vector2(860, 81)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1502495992]
+stream = ExtResource("5_vef27")
+autoplay = true
