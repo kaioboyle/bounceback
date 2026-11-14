@@ -7,8 +7,8 @@ size = Vector2(40, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2r3s"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcfa8"]
-size = Vector2(193, 38)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ao17e"]
+size = Vector2(22.215, 20)
 
 [node name="Player" type="Node2D" unique_id=1099134673]
 position = Vector2(609, 281)
@@ -29,6 +29,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="pogoPoint" type="Area2D" parent="CharacterBody2D" unique_id=1890813526]
 position = Vector2(0, 76)
+rotation = 1.5707964
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/pogoPoint" unique_id=1804531924]
 shape = SubResource("RectangleShape2D_f2r3s")
@@ -51,10 +52,11 @@ offset_bottom = 20.0
 color = Color(0.41062272, 0.41062272, 0.41062272, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Node2D" unique_id=1574151174]
+[node name="Area2D" type="Area2D" parent="Node2D" unique_id=1346104828]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/StaticBody2D" unique_id=832470418]
-position = Vector2(-1.5, 0)
-shape = SubResource("RectangleShape2D_xcfa8")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" unique_id=2135871259]
+scale = Vector2(8.359995, 2.1809158)
+shape = SubResource("RectangleShape2D_ao17e")
 
 [connection signal="body_entered" from="CharacterBody2D/pogoPoint" to="CharacterBody2D" method="_on_pogo_point_body_entered"]
+[connection signal="area_entered" from="Node2D/Area2D" to="CharacterBody2D" method="_on_area_2d_area_entered"]
